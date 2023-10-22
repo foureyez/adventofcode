@@ -36,6 +36,14 @@ func main() {
 	}
 }
 
+/**
+Simpler solution would've been to just create a array of sum of calories and
+Part1 -> Find max
+Part2 -> Sort the array and find top 3 and sum.
+**/
+
+// Edge case missed here when the input doesn't end with newline(\n),
+// and the max calories is carried by last elf.
 func part1(input string) int {
 	maxCalories := 0
 	currCalories := 0
